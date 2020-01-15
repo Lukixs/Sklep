@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="market.view.MainViewController">
+   <top>
+      <ToolBar prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+        <items>
+          <Button mnemonicParsing="false" text="Zaloguj się jako inny użytkownik" />
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Aktualnie jesteś zalogowany jako: " />
+        </items>
+      </ToolBar>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER" prefHeight="60.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#goHome" prefWidth="100.0" text="Home">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
